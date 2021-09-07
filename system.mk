@@ -9,10 +9,10 @@
 #
 
 #FIRMWARE SIZE (LOG2)
-FIRM_ADDR_W ?=15
+FIRM_ADDR_W ?=20
 
 #SRAM SIZE (LOG2)
-SRAM_ADDR_W ?=15
+SRAM_ADDR_W ?=20
 
 #DDR
 USE_DDR ?=0
@@ -31,7 +31,7 @@ INIT_MEM ?=1
 #must match respective submodule or folder name in the submodules directory
 #and CORE_NAME in the core.mk file of the submodule
 #PERIPHERALS:=UART
-PERIPHERALS ?=UART
+PERIPHERALS ?=UART KNN TIMER
 
 #RISC-V COMPRESSED INSTRUCTIONS
 USE_COMPRESSED ?=1
@@ -49,7 +49,7 @@ BOARD ?=CYCLONEV-GT-DK
 FPGA_DDR_ADDR_W ?=30
 
 #ROOT DIR ON REMOTE MACHINES
-REMOTE_ROOT_DIR ?=sandbox/iob-soc
+REMOTE_ROOT_DIR ?=diogof/sandbox/iob-soc
 
 #ASIC COMPILATION
 #default asic node  running locally or remotely
